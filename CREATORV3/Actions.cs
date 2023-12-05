@@ -35,7 +35,7 @@ namespace CREATORV3
             ExtensionSet("extensionAttribute5", valueISUID);
         }
     }
-    internal class Actions
+    public class Actions
     {
         public Variables _Variables;
         private const int KeySize = 256;

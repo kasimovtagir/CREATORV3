@@ -7,7 +7,7 @@ using System.DirectoryServices.AccountManagement;
 
 namespace CREATORV3
 {
-    internal class Variables
+    public class Variables
     {
         // настройки учетной записи для отправки писем на электронную почту
         private string FIOForSendEMail;

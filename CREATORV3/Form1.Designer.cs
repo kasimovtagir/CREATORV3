@@ -95,6 +95,7 @@
             this.аккаунтДляОтправкиEmailToolStripMenuItem.Name = "аккаунтДляОтправкиEmailToolStripMenuItem";
             this.аккаунтДляОтправкиEmailToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
             this.аккаунтДляОтправкиEmailToolStripMenuItem.Text = "Аккаунт для отправки email ";
+            this.аккаунтДляОтправкиEmailToolStripMenuItem.Click += new System.EventHandler(this.аккаунтДляОтправкиEmailToolStripMenuItem_Click);
             // 
             // текстПисьмаToolStripMenuItem
             // 
@@ -462,9 +463,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCreateUserAccount);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormCreateUser";
             this.Text = "CREATOR_V3.0";
+            this.Load += new System.EventHandler(this.FormCreateUser_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
