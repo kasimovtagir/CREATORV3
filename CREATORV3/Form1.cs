@@ -81,5 +81,49 @@ namespace CREATORV3
             accountSettings._Actions = _Actions;
             accountSettings.ShowDialog();
         }
+
+        private void доменToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DomainSettings domainSettings = new DomainSettings();
+            domainSettings._Variables = _Variables;
+            domainSettings._Actions = _Actions;
+            domainSettings.ShowDialog();
+            showLog();
+        }
+
+        public void showLog()
+        {
+            listBoxLog.Items.Clear();
+            foreach (var item in _Variables.Log)
+            {
+                listBoxLog.Items.Add(item);
+            }
+        }
+
+        private void парольПользователяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DefPasswordForUser defPasswordForUser = new DefPasswordForUser();
+            defPasswordForUser._Variables = _Variables;
+            defPasswordForUser._Actions = _Actions;
+            defPasswordForUser.ShowDialog();
+            showLog();
+        }
+
+        private void текстПисьмаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextMessage textMessage = new TextMessage();
+            textMessage._Variables = _Variables;
+            textMessage._Actions = _Actions;
+            textMessage.ShowDialog();
+        }
+
+        private void группыПоУмолчаниюToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListGroup listGroup = new ListGroup();
+            listGroup._Variables = _Variables;
+            listGroup._Actions = _Actions;
+
+            listGroup.ShowDialog();
+        }
     }
 }

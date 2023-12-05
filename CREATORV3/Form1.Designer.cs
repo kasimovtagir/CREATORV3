@@ -102,24 +102,28 @@
             this.текстПисьмаToolStripMenuItem.Name = "текстПисьмаToolStripMenuItem";
             this.текстПисьмаToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
             this.текстПисьмаToolStripMenuItem.Text = "Текст письма ";
+            this.текстПисьмаToolStripMenuItem.Click += new System.EventHandler(this.текстПисьмаToolStripMenuItem_Click);
             // 
             // группыПоУмолчаниюToolStripMenuItem
             // 
             this.группыПоУмолчаниюToolStripMenuItem.Name = "группыПоУмолчаниюToolStripMenuItem";
             this.группыПоУмолчаниюToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
             this.группыПоУмолчаниюToolStripMenuItem.Text = "Группы по умолчанию";
+            this.группыПоУмолчаниюToolStripMenuItem.Click += new System.EventHandler(this.группыПоУмолчаниюToolStripMenuItem_Click);
             // 
             // доменToolStripMenuItem
             // 
             this.доменToolStripMenuItem.Name = "доменToolStripMenuItem";
             this.доменToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
             this.доменToolStripMenuItem.Text = "Домен";
+            this.доменToolStripMenuItem.Click += new System.EventHandler(this.доменToolStripMenuItem_Click);
             // 
             // парольПользователяToolStripMenuItem
             // 
             this.парольПользователяToolStripMenuItem.Name = "парольПользователяToolStripMenuItem";
             this.парольПользователяToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
             this.парольПользователяToolStripMenuItem.Text = "Пароль пользователя";
+            this.парольПользователяToolStripMenuItem.Click += new System.EventHandler(this.парольПользователяToolStripMenuItem_Click);
             // 
             // работаСПользователямиToolStripMenuItem
             // 
@@ -211,9 +215,11 @@
             // listBoxLog
             // 
             this.listBoxLog.FormattingEnabled = true;
+            this.listBoxLog.HorizontalScrollbar = true;
             this.listBoxLog.ItemHeight = 24;
             this.listBoxLog.Location = new System.Drawing.Point(450, 36);
             this.listBoxLog.Name = "listBoxLog";
+            this.listBoxLog.ScrollAlwaysVisible = true;
             this.listBoxLog.Size = new System.Drawing.Size(518, 436);
             this.listBoxLog.TabIndex = 70;
             // 
@@ -234,6 +240,10 @@
             // 
             this.comboBoxTypePost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxTypePost.FormattingEnabled = true;
+            this.comboBoxTypePost.Items.AddRange(new object[] {
+            "Студент",
+            "Сотрудник",
+            "Пользователь"});
             this.comboBoxTypePost.Location = new System.Drawing.Point(159, 351);
             this.comboBoxTypePost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxTypePost.Name = "comboBoxTypePost";
@@ -248,6 +258,7 @@
             this.textBoxPasswordUser.Name = "textBoxPasswordUser";
             this.textBoxPasswordUser.Size = new System.Drawing.Size(284, 29);
             this.textBoxPasswordUser.TabIndex = 66;
+            this.textBoxPasswordUser.UseSystemPasswordChar = true;
             // 
             // textBoxEmail
             // 
